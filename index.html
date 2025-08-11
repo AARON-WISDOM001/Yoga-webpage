@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Yoga App UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Noto+Serif+Georgian:wght@100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+    rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: "Georgia", serif;
+    }
+
+    h4 {
+      font-family: "Georgia", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+    }
+
+    .app-screen {
+      width: 100%;
+      max-width: 400px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2);
+      margin: 20px auto;
+    }
+
+    .screen-3 {
+      background-image: url("images/yoga-backwardbend.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .screen-2-top-img {
+      background-image: url("images/bg-img.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 20px;
+      width: 100%;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+
+    .btn-orange {
+      background: #fd7e14;
+      color: white;
+    }
+
+    .exercise-box {
+      background: #f1f1f1b2;
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .exercise-box img {
+      max-height: 60px;
+      object-fit: contain;
+    }
+
+    .player-bar {
+      background: white;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .yoga-icon {
+      background-color: #fd7e14;
+      border-radius: 20%;
+      padding: 6px;
+      display: inline-block;
+    }
+
+    .yoga-icon img {
+      width: 50px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .range-slider {
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background: linear-gradient(to right,
+          #0f8755 0%,
+          #0f8755 50%,
+          #ccc 50%,
+          #ccc 100%);
+      outline: none;
+      opacity: 0.7;
+    }
+
+    .range-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #0f8755;
+      cursor: pointer;
+      border: none;
+      initial-value: 40;
+    }
+
+    .range-slider::-moz-range-thumb {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #0f8755;
+      cursor: pointer;
+      border: none;
+      initial-value: 40;
+    }
+
+    .text-orange {
+      color: #fd7e14;
+    }
+
+    .rounded- {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Main Container -->
+  <div class="container-fluid d-flex flex-wrap justify-content-center">
+    <!-- Screen 1: Welcome -->
+    <div class="app-screen text-center pb-4">
+      <div class="p-0">
+        <img src="images/whatsapp-image-2025-08-08.jpeg" alt="Yoga Pose"
+          class="img-fluid mb-3" />
+      </div>
+      <div class="p-3">
+        <h4 class="text-start">
+          <strong>Start Your <br />
+            Yoga Journey</strong>
+        </h4>
+        <p class="text-start">
+          These are good ones to learn as you build a regular yoga practice
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <button class="btn btn-light w-50 rounded-5 p-2">Register</button>
+          <button class="btn btn-orange w-50 rounded-5 p-2">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screen 2: Dashboard -->
+    <div class="app-screen ">
+      <div class="screen-2-top-img">
+        <div>
+          <i class="fas fa-bell float-end me-3 text-white"></i>
+        </div>
+        <p class="mb-1 opacity-75 text-white">Welcome back</p>
+        <h5 class="fw-bold text-white">Samantha William</h5>
+
+        <!-- Continue Your Exercise -->
+        <div class="bg-light opacity-75 p-3 rounded mt-3 d-flex  align-items-center">
+          <div class="yoga-icon shadow me-2">
+            <img src="images/yoga-icon.png" alt="Yoga Icon" />
+          </div>
+          <div class="flex-grow-1">
+            <h6 class="mb-0 fw-bold">Yoga Ashtanga</h6>
+            <small class="text-muted">Last minute: 1:20</small>
+          </div>
+          <button class="btn btn-sm border-3 border-black rounded-circle">
+            <i class="fas fa-play rounded-circle"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Yoga Categories -->
+      <div class="mt-4 p-4">
+        <p>
+          <strong>Yoga Exercise</strong><br /><small>Choose the type of yoga</small>
+        </p>
+        <div class="row g-2">
+          <div class="col-6">
+            <div class="exercise-box">
+              <img src="images/yoga-icon.png" alt="Beginner" /><br />
+              <small>Beginner</small>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="exercise-box">
+              <img src="images/pregnant-yoga.jpeg" alt="Pregnant" /><br />
+              <small>Pregnant</small>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="exercise-box">
+              <img src="images/forward-bend.jpeg" alt="Parent" class="img-fluid" /><br />
+              <small>Parent</small>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="exercise-box">
+              <img src="images/yoga_yoga_-img-removebg-preview.png" alt="Expert" /><br />
+              <small>Expert</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- News Section -->
+      <div class="mt-4 mx-2">
+        <p class="mb-1"><strong>Latest News</strong></p>
+        <div class="d-flex align-items-center bg-success text-white p-2 rounded">
+          <img src="images/yoga-backwardbend.jpeg" class="me-2 rounded" alt="News Image" style="width: 50px; height: 50px; object-fit: cover" class="" />
+          <span class="text-start">The Power Of <br> Moving Your Body</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screen 3: Player -->
+    <div class="app-screen text-center position-relative pb-4 screen-3">
+      <div class="d-flex justify-content-between align-items-center p-3">
+        <i class="fas fa-chevron-left p-2 text-white btn-orange rounded-circle"></i>
+        <i class="fas fa-bookmark text-success"></i>
+      </div>
+      <!-- Floating Player Control -->
+      <div class="player-bar position-absolute bottom-0 start-50 translate-middle-x mb-3 w-75 p-3">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <p class="mb-1 small">Playing Yoga Ashtanga</p>
+          <i class="fas fa-play text-orange"></i>
+        </div>
+        <div class="d-flex justify-content-between small mb-1">
+          <span>4:20</span>
+          <span>10:30</span>
+        </div>
+        <input type="range" class="mb-4 range-slider" min="0" max="100" value="50" id="yogaRange" />
+        <div class="d-flex justify-content-around">
+          <i class="fas fa-backward text-orange"></i>
+          <i class="fas fa-pause-circle fa-lg text-orange mt-1"></i>
+          <i class="fas fa-forward text-orange"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const slider = document.getElementById("yogaRange");
+
+    slider.addEventListener("input", function () {
+      let value = ((this.value - this.min) / (this.max - this.min)) * 100;
+      this.style.background = `linear-gradient(to right, #0f8755 0%, #0f8755 ${value}%, #ccc ${value}%, #ccc 100%)`;
+    });
+  </script>
+</body>
+
+</html>
