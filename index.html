@@ -47,6 +47,7 @@
       background-position: center;
       background-repeat: no-repeat;
     }
+
     .screen-2-top-img {
       background-image: url("images/bg-img.png");
       background-size: cover;
@@ -140,6 +141,19 @@
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      outline: none;
+      box-shadow: none;
+      background-color: none;
+    }
   </style>
 </head>
 
@@ -149,8 +163,7 @@
     <!-- Screen 1: Welcome -->
     <div class="app-screen text-center pb-4">
       <div class="p-0">
-        <img src="images/whatsapp-image-2025-08-08.jpeg" alt="Yoga Pose"
-          class="img-fluid mb-3" />
+        <img src="images/whatsapp-image-2025-08-08.jpeg" alt="Yoga Pose" class="img-fluid mb-3" />
       </div>
       <div class="p-3">
         <h4 class="text-start">
@@ -161,23 +174,26 @@
           These are good ones to learn as you build a regular yoga practice
         </p>
         <div class="d-flex justify-content-center gap-3 mt-3">
-          <button class="btn btn-light w-50 rounded-5 p-2">Register</button>
-          <button class="btn btn-orange w-50 rounded-5 p-2">Login</button>
+          <button class="btn btn-light w-50 rounded-5 p-2"
+            onclick="document.getElementById('screen-2').scrollIntoView({ behavior: 'smooth' });">Register</button>
+          <button class="btn btn-orange w-50 rounded-5 p-2"
+            onclick="document.getElementById('screen-2').scrollIntoView({ behavior: 'smooth' });">Login</button>
         </div>
       </div>
     </div>
 
     <!-- Screen 2: Dashboard -->
-    <div class="app-screen ">
+    <div class="app-screen" id="screen-2">
       <div class="screen-2-top-img">
         <div>
-          <i class="fas fa-bell float-end me-3 text-white btn"></i>
+          <i class="fas fa-bell float-end me-3 text-white"></i>
         </div>
         <p class="mb-1 opacity-75 text-white">Welcome back</p>
         <h5 class="fw-bold text-white">Samantha William</h5>
 
         <!-- Continue Your Exercise -->
-        <div class="bg-light opacity-75 p-3 rounded mt-3 d-flex  align-items-center">
+        <div class="bg-light opacity-75 p-3 rounded mt-3 d-flex  align-items-center"
+          onclick="document.getElementById('screen-3').scrollIntoView({ behavior: 'smooth' });">
           <div class="yoga-icon shadow me-2">
             <img src="images/yoga-icon.png" alt="Yoga Icon" />
           </div>
@@ -197,25 +213,29 @@
         </p>
         <div class="row g-2">
           <div class="col-6">
-            <div class="exercise-box">
+            <div class="exercise-box"
+              onclick="document.getElementById('screen-3').scrollIntoView({ behavior: 'smooth' });">
               <img src="images/yoga-icon.png" alt="Beginner" /><br />
               <small>Beginner</small>
             </div>
           </div>
           <div class="col-6">
-            <div class="exercise-box">
+            <div class="exercise-box"
+              onclick="document.getElementById('screen-3').scrollIntoView({ behavior: 'smooth' });">
               <img src="images/pregnant-yoga.jpeg" alt="Pregnant" /><br />
               <small>Pregnant</small>
             </div>
           </div>
           <div class="col-6">
-            <div class="exercise-box">
+            <div class="exercise-box"
+              onclick="document.getElementById('screen-3').scrollIntoView({ behavior: 'smooth' });">
               <img src="images/forward-bend.jpeg" alt="Parent" class="img-fluid" /><br />
               <small>Parent</small>
             </div>
           </div>
           <div class="col-6">
-            <div class="exercise-box">
+            <div class="exercise-box"
+              onclick="document.getElementById('screen-3').scrollIntoView({ behavior: 'smooth' });">
               <img src="images/yoga_yoga_-img-removebg-preview.png" alt="Expert" /><br />
               <small>Expert</small>
             </div>
@@ -227,23 +247,24 @@
       <div class="mt-4 mx-2">
         <p class="mb-1"><strong>Latest News</strong></p>
         <div class="d-flex align-items-center bg-success text-white p-2 rounded">
-          <img src="images/yoga-backwardbend.jpeg" class="me-2 rounded" alt="News Image" style="width: 50px; height: 50px; object-fit: cover" class="" />
+          <img src="images/yoga-backwardbend.jpeg" class="me-2 rounded" alt="News Image"
+            style="width: 50px; height: 50px; object-fit: cover" class="" />
           <span class="text-start">The Power Of <br> Moving Your Body</span>
         </div>
       </div>
     </div>
 
     <!-- Screen 3: Player -->
-    <div class="app-screen text-center position-relative pb-4 screen-3">
+    <div class="app-screen text-center position-relative pb-4 screen-3" id="screen-3">
       <div class="d-flex justify-content-between align-items-center p-3">
-        <i class="fas fa-chevron-left p-2 text-white btn-orange rounded-circle btn"></i>
-        <i class="fas fa-bookmark text-success btn"></i>
+        <i class="fas fa-chevron-left p-2 text-white btn-orange rounded-circle"></i>
+        <i class="fas fa-bookmark text-success"></i>
       </div>
       <!-- Floating Player Control -->
       <div class="player-bar position-absolute bottom-0 start-50 translate-middle-x mb-3 w-75 p-3">
         <div class="d-flex justify-content-between align-items-center mb-2">
           <p class="mb-1 small">Playing Yoga Ashtanga</p>
-          <i class="fas fa-play text-orange btn"></i>
+          <i class="fas fa-play text-orange"></i>
         </div>
         <div class="d-flex justify-content-between small mb-1">
           <span>4:20</span>
@@ -251,9 +272,9 @@
         </div>
         <input type="range" class="mb-4 range-slider" min="0" max="100" value="50" id="yogaRange" />
         <div class="d-flex justify-content-around">
-          <i class="fas fa-backward text-orange btn"></i>
-          <i class="fas fa-pause-circle fa-lg text-orange mt-1 btn"></i>
-          <i class="fas fa-forward text-orange btn"></i>
+          <i class="fas fa-backward text-orange"></i>
+          <i class="fas fa-pause-circle fa-lg text-orange mt-1"></i>
+          <i class="fas fa-forward text-orange"></i>
         </div>
       </div>
     </div>
@@ -268,7 +289,4 @@
   </script>
 </body>
 
-
 </html>
-
-
