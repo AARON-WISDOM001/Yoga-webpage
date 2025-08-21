@@ -1,0 +1,151 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Georgia", serif;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Georgia", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.app-screen {
+  width: 100%;
+  min-width: 400px;
+  overflow: idden;
+  background: white;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2);
+  margin: 10px 15px;
+}
+
+#screen-3 {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("images/yoga-backwardbend.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+
+#screen-3 .app-screen {
+  width: 100%;
+  max-width: 430px;
+  /* or your preferred mobile width */
+  margin: 0 auto;
+  background: transparent;
+  /* So the background image shows */
+  box-shadow: none;
+}
+
+.screen-2-top-img {
+  background-image: url("images/bg-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 100%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.btn-orange {
+  background: #fd7e14;
+  color: white;
+}
+
+.exercise-box {
+  background: #f1f1f1b2;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+.exercise-box img {
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.player-bar {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.yoga-icon {
+  background-color: #fd7e14;
+  border-radius: 20%;
+  padding: 6px;
+  display: inline-block;
+}
+
+.yoga-icon img {
+  width: 50px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.range-slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(
+    to right,
+    #0f8755 0%,
+    #0f8755 50%,
+    #ccc 50%,
+    #ccc 100%
+  );
+  outline: none;
+  opacity: 0.7;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #0f8755;
+  cursor: pointer;
+  border: none;
+  initial-value: 40;
+}
+
+.range-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #0f8755;
+  cursor: pointer;
+  border: none;
+  initial-value: 40;
+}
+
+.text-orange {
+  color: #fd7e14;
+}
+
+.rounded- {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  background-color: none;
+}
