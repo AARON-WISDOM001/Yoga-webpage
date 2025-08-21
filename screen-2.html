@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>screen-2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Noto+Serif+Georgian:wght@100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Screen 2: Dashboard -->
+    <div class="app-screen" id="screen-2">
+      <div class="screen-2-top-img">
+        <a href="screen-3.html"
+          ><div>
+            <i class="fas fa-bell float-end me-3 text-white"></i>
+          </div>
+          <p class="mb-1 opacity-75 text-white">Welcome back</p>
+          <h5 class="fw-bold text-white">Samantha William</h5>
+
+          <!-- Continue Your Exercise -->
+          <div
+            class="bg-light opacity-75 p-3 rounded mt-3 d-flex align-items-center px-lg-4"
+          >
+            <div class="yoga-icon shadow me-2">
+              <img src="images/yoga-icon.png" alt="Yoga Icon" />
+            </div>
+            <div class="flex-grow-1">
+              <h6 class="mb-0 fw-bold">Yoga Ashtanga</h6>
+              <small class="text-muted">Last minute: 1:20</small>
+            </div>
+            <button class="btn btn-sm border-3 border-black rounded-circle">
+              <i class="fas fa-play rounded-circle"></i>
+            </button></div
+        ></a>
+      </div>
+      <!-- Yoga Categories -->
+      <div class="mt-4 p-4">
+        <p>
+          <strong>Yoga Exercise</strong><br /><small
+            >Choose the type of yoga</small
+          >
+        </p>
+        <div class="row g-2 px-lg-5">
+          <div class="col-6">
+            <a href="screen-3.html"
+              ><div
+                class="exercise-box"
+                onclick="document.getElementById('screen-3').scrollIntoView({ behavior: 'smooth' });"
+              >
+                <img src="images/yoga-icon.png" alt="Beginner" /><br />
+                <small>Beginner</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="screen-3.html"
+              ><div
+                class="exercise-box"
+                onclick="document.getElementById('screen-3').scrollIntoView({ behavior: 'smooth' });"
+              >
+                <img src="images/pregnant-yoga.jpeg" alt="Pregnant" /><br />
+                <small>Pregnant</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="screen-3.html"
+              ><div class="exercise-box">
+                <img
+                  src="images/forward-bend.jpeg"
+                  alt="Parent"
+                  class="img-fluid"
+                /><br />
+                <small>Parent</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="screen-3.html"
+              ><div class="exercise-box">
+                <img
+                  src="images/yoga_yoga_-img-removebg-preview.png"
+                  alt="Expert"
+                /><br />
+                <small>Expert</small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- News Section -->
+      <div class="mt-4 mx-2">
+        <p class="mb-1"><strong>Latest News</strong></p>
+        <div
+          class="d-flex align-items-center bg-success text-white p-2 rounded"
+        >
+          <img
+            src="images/yoga-backwardbend.jpeg"
+            class="me-2 rounded"
+            alt="News Image"
+            style="width: 50px; height: 50px; object-fit: cover"
+            class=""
+          />
+          <span class="text-start"
+            >The Power Of <br />
+            Moving Your Body</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
